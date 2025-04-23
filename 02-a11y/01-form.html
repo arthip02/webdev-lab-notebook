@@ -7,35 +7,40 @@
     <link rel="stylesheet" href="../_styles/styles.css" />
   </head>
   <body>
-    <h1>01 - Form</h1>
-    <form action="/submit">
-      <label>
-        Name
-        <input type="text" />
+    <header>
+      <h1>01 - Form</h1>
+    </header>
+    <main>
+      <form action="/submit">
+        <label>
+          Name
+          <input type="text" />
+          <br /><br />
+        </label>
+        <label>
+          Email
+          <input type="text" />
+        </label>
         <br /><br />
-      </label>
-      <label>
-        Email
-        <input type="text" />
-      </label>
-      <br /><br />
-      <fieldset>
-        <legend>Favorite Character</legend>
-        <div>
-          <input type="radio" name="char" id="spongebob" />
-          <label for="spongebob">Spongebob</label>
-        </div>
-        <div>
-          <input type="radio" name="char" id="patrick" />
-          <label for="patrick">Patrick</label>
-        </div>
-        <div>
-          <input type="radio" name="char" id="sandy" />
-          <label for="sandy">Sandy</label>
-          <br />
-        </div>
-      </fieldset>
-      <button>Submit</button>
-    </form>
+        <fieldset>
+          <legend>Favorite Character</legend>
+          <div>
+            <input type="radio" name="char" id="spongebob" />
+            <label for="spongebob">Spongebob</label>
+          </div>
+          <div>
+            <input type="radio" name="char" id="patrick" />
+            <label for="patrick">Patrick</label>
+          </div>
+          <div>
+            <input type="radio" name="char" id="sandy" />
+            <label for="sandy">Sandy</label>
+            <br />
+          </div>
+        </fieldset>
+        <br />
+        <button>Submit</button>
+      </form>
+    </main>
   </body>
 </html>
