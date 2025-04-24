@@ -23,6 +23,23 @@ Ans: I believe each and every corner is been covered completely.
 
 Enter your reflections on this section here.
 
+❏ Were you able to complete the exercises on your own or did you use the
+videos or the solutions for help?
+
+A: I was able to complete entire exercises by my own. I didnt watch any videos to learn this time. I think im liking my improvemnet in myself on this.
+
+❏ How helpful did you find the exercises in this section? Was there one
+exercise that was particularly helpful?
+
+Ans: This had helped me alot in learning the format of the elements to be.
+
+❏ Was there something that you wish had been explained better?
+Ans: No, It's super cool thank you for the practice exercises.
+
+❏ Were there other exercises that might have helped you learn this week’s
+topic a little better?  
+Ans: I believe each and every corner is been covered completely. But, having more exercises on element styling and accessibilty may built more confidence to proceed further.
+
 ### CSS
 
 Enter your reflections on this section here.
