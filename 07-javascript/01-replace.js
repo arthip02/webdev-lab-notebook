@@ -3,16 +3,16 @@ const replaceItems = (input) => {
 
   // for reference, see the MDN "Regular Expressions" entry:
   // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions
+  const goldRegex = new RegExp("gold", "gi");
+  const wanderRegex = new RegExp("wander", "gi");
 
-  const gold = "SHINY";
-  const GOLD = "SHINY";
-  const Wander = "roam";
-  return input;
+  // Use replace() to substitute matches
+  return input.replace(goldRegex, "SHINY").replace(wanderRegex, "roam");
 };
-const title = "All that is $(gold) does not glitter";
-console.log(title);
+
+console.log(replaceItems("All that is gold does not glitter."));
 // expected: 'All that is SHINY does not glitter'
-console.log(replaceItems("Wisdom is better than silver or $(GOLD)."));
+console.log(replaceItems("Wisdom is better than silver or GOLD."));
 // expected: 'Wisdom is better than silver or SHINY.'
 console.log(replaceItems("Not all those who Wander are lost"));
 // expected: 'Not all those who roam are lost'
