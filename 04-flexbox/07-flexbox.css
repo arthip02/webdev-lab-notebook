@@ -23,7 +23,8 @@
   flex-direction: column-reverse;
   flex-wrap: wrap;
   height: 400px;
-  align-content: flex-start;
+  column-gap: 150px;
+  align-content: flex-end;
 }
 
 /* use height: 400px; on the container */
