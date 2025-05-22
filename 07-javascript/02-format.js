@@ -1,4 +1,5 @@
 const formatItems = (input) => {
+  return input.map((num) => num.toFixed(3)).join(", ");
   // return a string of the concatenated numbers, separated by commas and with three digits after the decimal point
 
   // for reference, see the MDN Number page:
