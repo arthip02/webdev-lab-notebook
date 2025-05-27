@@ -1,3 +1,8 @@
+:root {
+  --white: #ffffff;
+  --purple: rebeccapurple;
+}
+
 h1 {
   text-align: center;
 }
@@ -9,8 +14,7 @@ form {
 form > * {
   margin: 1rem;
 }
-
-.row > * {
+.row.box-row > * {
   height: 160px;
   border: 1px solid var(--white);
   background-color: var(--purple);
