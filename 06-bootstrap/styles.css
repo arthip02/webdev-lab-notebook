@@ -25,3 +25,10 @@ form > * {
 .box {
   height: 160px;
 }
+
+.row.box-row > * {
+  height: 160px;
+  background-color: #800080;
+  color: white;
+  border: 1px solid white;
+}
