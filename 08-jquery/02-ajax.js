@@ -1,52 +1,25 @@
-const url = 'https://anapioficeandfire.com/api/books/';
+$(document).ready(function () {
+  const url = "https://anapioficeandfire.com/api/books/";
 
-const app = document.querySelector('#books');
-app.style.paddingLeft = 0;
-const loading = document.querySelector('#loading');
+  $.get(url, function (data) {
+    // Remove loader
+    $("#loading").remove();
 
-const addBookToDOM = (item) => {
-  console.log(item);
-  let element = document.createElement('div');
-  let title = document.createElement('h4');
-  let author = document.createElement('p');
-  let published = document.createElement('p');
-  let pages = document.createElement('p');
+    data.forEach((book) => {
+      const bookBlock = $(`
+        <div style="text-align: center; margin-bottom: 2rem;">
+          <h2 style="margin-bottom: 0.25rem;">${book.name}</h2>
+          <p style="margin: 0; font-size: 0.9rem; color: #555;">by ${book.authors.join(
+            ", "
+          )}</p>
+          <p style="margin: 0.4rem 0 0 0;">${new Date(
+            book.released
+          ).getFullYear()}</p>
+          <p style="margin: 0;">${book.numberOfPages} pages</p>
+        </div>
+      `);
 
-  element.style.display = 'flex';
-  element.style.flexDirection = 'column';
-  element.style.alignItems = 'center';
-  element.style.marginTop = '20px';
-
-  title.textContent = item.name;
-  author.textContent = `by ${item.authors[0]}`;
-  published.textContent = item.released.substr(0, 4);
-  pages.textContent = `${item.numberOfPages} pages`;
-
-  element.append(title);
-  element.append(author);
-  element.append(published);
-  element.append(pages);
-
-  app.append(element);
-};
-
-const fetchData = (url) => {
-  fetch(url)
-    .then((response) => response.json())
-    .then((data) => {
-      data.forEach((item) => {
-        addBookToDOM(item);
-      });
-    })
-    .catch((error) => {
-      console.log(error);
-      let li = document.createElement('li');
-      li.textContent = `An error occured. Please try again.`;
-      app.append(li);
-    })
-    .finally(() => {
-      app.removeChild(loading);
+      $("#books").append(bookBlock);
     });
-};
-
-fetchData(url);
+  });
+});

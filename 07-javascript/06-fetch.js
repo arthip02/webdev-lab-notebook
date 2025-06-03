@@ -27,7 +27,7 @@ const fetchData = async (url) => {
       bookCard.style.textAlign = "left";
 
       bookCard.innerHTML = `
-          <h3>${book.name}</h3>
+          <h2>${book.name}</h2>
           <p><strong>Author:</strong> ${book.authors.join(", ")}</p>
           <p><strong>Published:</strong> ${new Date(
             book.released

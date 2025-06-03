@@ -118,3 +118,5 @@ Ans: No, It's super cool thank you for the practice exercises.
 ❏ Were there other exercises that might have helped you learn this week’s
 topic a little better?  
 Ans: Including more exercises on bootstrap helped me alot. I think this is good and sufficient for practice and fortunately everything is been covered in these exercises.
+
+### Javascript
