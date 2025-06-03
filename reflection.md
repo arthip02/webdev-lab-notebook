@@ -120,3 +120,39 @@ topic a little better?
 Ans: Including more exercises on bootstrap helped me alot. I think this is good and sufficient for practice and fortunately everything is been covered in these exercises.
 
 ### Javascript
+
+❏ Were you able to complete the exercises on your own or did you use the
+videos or the solutions for help?
+
+A: I was able to complete entire exercises by my own.
+
+❏ How helpful did you find the exercises in this section? Was there one
+exercise that was particularly helpful?
+
+Ans: All the exercises are helpful.
+
+❏ Was there something that you wish had been explained better?
+Ans: No, It's super cool thank you for the practice exercises.
+
+❏ Were there other exercises that might have helped you learn this week’s
+topic a little better?  
+Ans: No, it's good and had practiced alot.
+
+### Jquery
+
+❏ Were you able to complete the exercises on your own or did you use the
+videos or the solutions for help?
+
+A: I was able to complete entire exercises by my own.
+
+❏ How helpful did you find the exercises in this section? Was there one
+exercise that was particularly helpful?
+
+Ans:Yes, they are helpful.
+
+❏ Was there something that you wish had been explained better?
+Ans: No, thank you for the practice exercises.
+
+❏ Were there other exercises that might have helped you learn this week’s
+topic a little better?  
+Ans: No, I feel good and had great experience with jquery.
