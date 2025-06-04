@@ -1,3 +1,11 @@
+:root {
+  --green: #006400;
+  --black: #000;
+  --white: #fff;
+  --orange: #ffa500;
+  --purple: #800080;
+}
+
 nav {
   position: fixed;
   top: 0px;
@@ -10,22 +18,21 @@ nav ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
-}
-
-nav ul li {
-  display: inline-block;
+  background: var(--black);
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0.6rem 1rem;
+  gap: 1rem;
+  flex-direction: row;
 }
 
 nav ul li a {
-  display: block;
-  padding: 1em;
   text-decoration: none;
   color: var(--white);
 }
 
 .main {
-  margin-top: 100px;
-  padding: 0 0.5em;
+  padding: 1rem;
 }
 
 body {
@@ -33,25 +40,81 @@ body {
   color: var(--white);
 }
 
-@media (max-width: 414px) {
-  nav ul li {
-    width: 100%;
-  }
-  .main {
-    margin-top: 220px;
-  }
+#parmesan h1 {
+  text-align: left;
 }
 
-@media (min-width: 415px) and (max-width: 1024px) {
+@media (min-width: 1024px) {
+  body {
+    background: var(--green);
+    color: var(--white);
+  }
+
+  nav ul {
+    flex-direction: row;
+  }
+
+  .main {
+    display: block;
+  }
+
+  #parmesan,
+  #manchego {
+    background: none;
+    color: var(--white);
+    padding: 1rem;
+  }
+}
+@media (min-width: 600px) and (max-width: 1023px) {
   body {
     background: var(--orange);
     color: var(--black);
   }
-}
 
-@media (min-width: 1025px) {
+  nav ul {
+    flex-direction: row;
+  }
+
+  .main {
+    padding: 1rem;
+  }
+
+  #parmesan {
+    background: var(--orange);
+    color: var(--black);
+    padding: 1rem;
+  }
+
+  #manchego {
+    background: var(--orange);
+    color: var(--black);
+    padding: 1rem;
+  }
+}
+@media (max-width: 599px) {
   body {
-    background: var(--green);
+    background: var(--black);
     color: var(--white);
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .main {
+    padding: 0;
+  }
+
+  #parmesan {
+    background: var(--purple);
+    color: var(--white);
+    padding: 1rem;
+  }
+
+  #manchego {
+    background: var(--purple);
+    color: var(--white);
+    padding: 1rem;
   }
 }
